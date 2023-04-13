@@ -1,6 +1,9 @@
 name: Rodar Pipeline
 on: 
   pull_request
+    paths:
+      - '**/*.swift'
+
 
 jobs:
   build: 
@@ -22,3 +25,5 @@ jobs:
     steps:
     - name: SwiftLint
       uses: norio-nomura/action-swiftlint@3.2.1
+      env:
+          WORKING_DIRECTORY: Momondo
