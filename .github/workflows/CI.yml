@@ -10,5 +10,8 @@ jobs:
     - name: Configurando Ambiente
       uses: actions/checkout@v1
 
-    - name: Build Simulate
-      run: xcodebuild  clean build test -project Momondo/Momondo.xcodeproj -scheme Momondo -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14"
+    - name: Clean & Build & Test
+      run: xcodebuild clean build test -project Momondo/Momondo.xcodeproj -scheme Momondo -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14"
+
+    - name: SwiftLint
+      uses: norio-nomura/action-swiftlint@3.2.1
