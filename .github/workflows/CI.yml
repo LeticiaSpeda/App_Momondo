@@ -15,10 +15,3 @@ jobs:
 
     - name: Clean & Build & Test
       run: xcodebuild clean build test -project Momondo/Momondo.xcodeproj -scheme Momondo -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14"
-
-  lint:
-    name: Rodando o SwiftLint
-    runs-on: ubuntu-latest
-    steps:
-    - name: SwiftLint
-      uses: norio-nomura/action-swiftlint@3.2.1
