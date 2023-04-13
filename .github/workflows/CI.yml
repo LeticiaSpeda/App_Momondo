@@ -13,5 +13,11 @@ jobs:
     - name: Clean & Build & Test
       run: xcodebuild clean build test -project Momondo/Momondo.xcodeproj -scheme Momondo -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14"
 
+    - name: Salvando em chache
+      uses: mikehardy/buildcache-action@v2
+
+  lint:
+    name: Rodando o SwiftLint
+    runs-on: ubuntu-latest
     - name: SwiftLint
       uses: norio-nomura/action-swiftlint@3.2.1
