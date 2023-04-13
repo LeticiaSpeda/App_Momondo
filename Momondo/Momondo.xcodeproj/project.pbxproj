@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E012D1DB29E39F3100B38544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DA29E39F3100B38544 /* AppDelegate.swift */; };
+		E012D1DD29E39F3100B38544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DC29E39F3100B38544 /* SceneDelegate.swift */; };
+		E012D1DF29E39F3100B38544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DE29E39F3100B38544 /* ViewController.swift */; };
+		E012D1E429E39F3300B38544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E329E39F3300B38544 /* Assets.xcassets */; };
+		E012D1E729E39F3300B38544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E529E39F3300B38544 /* LaunchScreen.storyboard */; };
+		E012D1F229E39F3300B38544 /* MomondoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1F129E39F3300B38544 /* MomondoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E012D1EE29E39F3300B38544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E012D1CF29E39F3100B38544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E012D1D629E39F3100B38544;
+			remoteInfo = Momondo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E012D1D729E39F3100B38544 /* Momondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E012D1DA29E39F3100B38544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E012D1DC29E39F3100B38544 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E012D1DE29E39F3100B38544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E012D1E329E39F3300B38544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E012D1E629E39F3300B38544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E012D1E829E39F3300B38544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E012D1ED29E39F3300B38544 /* MomondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E012D1F129E39F3300B38544 /* MomondoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomondoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E012D1D429E39F3100B38544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E012D1EA29E39F3300B38544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E012D1CE29E39F3100B38544 = {
+			isa = PBXGroup;
+			children = (
+				E012D1D929E39F3100B38544 /* Momondo */,
+				E012D1F029E39F3300B38544 /* MomondoTests */,
+				E012D1D829E39F3100B38544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E012D1D829E39F3100B38544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E012D1D729E39F3100B38544 /* Momondo.app */,
+				E012D1ED29E39F3300B38544 /* MomondoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E012D1D929E39F3100B38544 /* Momondo */ = {
+			isa = PBXGroup;
+			children = (
+				E012D1DE29E39F3100B38544 /* ViewController.swift */,
+				E012D1E829E39F3300B38544 /* Info.plist */,
+				E012D20B29E39FA900B38544 /* Assets */,
+				E012D20A29E39F7C00B38544 /* Aplication */,
+			);
+			path = Momondo;
+			sourceTree = "<group>";
+		};
+		E012D1F029E39F3300B38544 /* MomondoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E012D1F129E39F3300B38544 /* MomondoTests.swift */,
+			);
+			path = MomondoTests;
+			sourceTree = "<group>";
+		};
+		E012D20A29E39F7C00B38544 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				E012D1DA29E39F3100B38544 /* AppDelegate.swift */,
+				E012D1DC29E39F3100B38544 /* SceneDelegate.swift */,
+				E012D1E529E39F3300B38544 /* LaunchScreen.storyboard */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		E012D20B29E39FA900B38544 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E012D1E329E39F3300B38544 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E012D1D629E39F3100B38544 /* Momondo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E012D20129E39F3300B38544 /* Build configuration list for PBXNativeTarget "Momondo" */;
+			buildPhases = (
+				E012D1D329E39F3100B38544 /* Sources */,
+				E012D1D429E39F3100B38544 /* Frameworks */,
+				E012D1D529E39F3100B38544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Momondo;
+			productName = Momondo;
+			productReference = E012D1D729E39F3100B38544 /* Momondo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E012D1EC29E39F3300B38544 /* MomondoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E012D20429E39F3300B38544 /* Build configuration list for PBXNativeTarget "MomondoTests" */;
+			buildPhases = (
+				E012D1E929E39F3300B38544 /* Sources */,
+				E012D1EA29E39F3300B38544 /* Frameworks */,
+				E012D1EB29E39F3300B38544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E012D1EF29E39F3300B38544 /* PBXTargetDependency */,
+			);
+			name = MomondoTests;
+			productName = MomondoTests;
+			productReference = E012D1ED29E39F3300B38544 /* MomondoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E012D1CF29E39F3100B38544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E012D1D629E39F3100B38544 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E012D1EC29E39F3300B38544 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E012D1D629E39F3100B38544;
+					};
+				};
+			};
+			buildConfigurationList = E012D1D229E39F3100B38544 /* Build configuration list for PBXProject "Momondo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E012D1CE29E39F3100B38544;
+			productRefGroup = E012D1D829E39F3100B38544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E012D1D629E39F3100B38544 /* Momondo */,
+				E012D1EC29E39F3300B38544 /* MomondoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E012D1D529E39F3100B38544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E012D1E729E39F3300B38544 /* LaunchScreen.storyboard in Resources */,
+				E012D1E429E39F3300B38544 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E012D1EB29E39F3300B38544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E012D1D329E39F3100B38544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E012D1DF29E39F3100B38544 /* ViewController.swift in Sources */,
+				E012D1DB29E39F3100B38544 /* AppDelegate.swift in Sources */,
+				E012D1DD29E39F3100B38544 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E012D1E929E39F3300B38544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E012D1F229E39F3300B38544 /* MomondoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E012D1EF29E39F3300B38544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E012D1D629E39F3100B38544 /* Momondo */;
+			targetProxy = E012D1EE29E39F3300B38544 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E012D1E529E39F3300B38544 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E012D1E629E39F3300B38544 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E012D1FF29E39F3300B38544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E012D20029E39F3300B38544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E012D20229E39F3300B38544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Momondo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.Momondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E012D20329E39F3300B38544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Momondo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.Momondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E012D20529E39F3300B38544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.MomondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Momondo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Momondo";
+			};
+			name = Debug;
+		};
+		E012D20629E39F3300B38544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.MomondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Momondo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Momondo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E012D1D229E39F3100B38544 /* Build configuration list for PBXProject "Momondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E012D1FF29E39F3300B38544 /* Debug */,
+				E012D20029E39F3300B38544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E012D20129E39F3300B38544 /* Build configuration list for PBXNativeTarget "Momondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E012D20229E39F3300B38544 /* Debug */,
+				E012D20329E39F3300B38544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E012D20429E39F3300B38544 /* Build configuration list for PBXNativeTarget "MomondoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E012D20529E39F3300B38544 /* Debug */,
+				E012D20629E39F3300B38544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E012D1CF29E39F3100B38544 /* Project object */;
+}
