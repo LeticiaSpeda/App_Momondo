@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIView {
-    func traslate() {
+    func translate() {
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
