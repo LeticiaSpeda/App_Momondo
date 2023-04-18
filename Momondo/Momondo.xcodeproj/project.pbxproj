@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E012D1DB29E39F3100B38544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DA29E39F3100B38544 /* AppDelegate.swift */; };
 		E012D1DD29E39F3100B38544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DC29E39F3100B38544 /* SceneDelegate.swift */; };
-		E012D1DF29E39F3100B38544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DE29E39F3100B38544 /* ViewController.swift */; };
+		E012D1DF29E39F3100B38544 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DE29E39F3100B38544 /* TermsViewController.swift */; };
 		E012D1E429E39F3300B38544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E329E39F3300B38544 /* Assets.xcassets */; };
 		E012D1E729E39F3300B38544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E529E39F3300B38544 /* LaunchScreen.storyboard */; };
 		E012D1F229E39F3300B38544 /* MomondoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1F129E39F3300B38544 /* MomondoTests.swift */; };
+		E012D20F29EE063000B38544 /* Extension+UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D20E29EE063000B38544 /* Extension+UiView.swift */; };
+		E012D21129EE20A100B38544 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D21029EE20A100B38544 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +31,14 @@
 		E012D1D729E39F3100B38544 /* Momondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E012D1DA29E39F3100B38544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E012D1DC29E39F3100B38544 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E012D1DE29E39F3100B38544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E012D1DE29E39F3100B38544 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		E012D1E329E39F3300B38544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E012D1E629E39F3300B38544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E012D1E829E39F3300B38544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E012D1ED29E39F3300B38544 /* MomondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E012D1F129E39F3300B38544 /* MomondoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomondoTests.swift; sourceTree = "<group>"; };
+		E012D20E29EE063000B38544 /* Extension+UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UiView.swift"; sourceTree = "<group>"; };
+		E012D21029EE20A100B38544 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,10 @@
 		E012D1D929E39F3100B38544 /* Momondo */ = {
 			isa = PBXGroup;
 			children = (
-				E012D1DE29E39F3100B38544 /* ViewController.swift */,
+				E012D1DE29E39F3100B38544 /* TermsViewController.swift */,
+				E012D21029EE20A100B38544 /* LoginViewController.swift */,
 				E012D1E829E39F3300B38544 /* Info.plist */,
+				E012D20D29EE060800B38544 /* Helpers */,
 				E012D20B29E39FA900B38544 /* Assets */,
 				E012D20A29E39F7C00B38544 /* Aplication */,
 			);
@@ -110,6 +116,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		E012D20D29EE060800B38544 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E012D20E29EE063000B38544 /* Extension+UiView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +134,7 @@
 				E012D1D329E39F3100B38544 /* Sources */,
 				E012D1D429E39F3100B38544 /* Frameworks */,
 				E012D1D529E39F3100B38544 /* Resources */,
+				E012D20C29E8E5E500B38544 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -205,13 +220,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E012D20C29E8E5E500B38544 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E012D1D329E39F3100B38544 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E012D1DF29E39F3100B38544 /* ViewController.swift in Sources */,
+				E012D1DF29E39F3100B38544 /* TermsViewController.swift in Sources */,
 				E012D1DB29E39F3100B38544 /* AppDelegate.swift in Sources */,
+				E012D20F29EE063000B38544 /* Extension+UiView.swift in Sources */,
+				E012D21129EE20A100B38544 /* LoginViewController.swift in Sources */,
 				E012D1DD29E39F3100B38544 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
