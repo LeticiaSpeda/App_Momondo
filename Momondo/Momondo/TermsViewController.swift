@@ -63,7 +63,7 @@ final class TermsViewController: UIViewController {
         button.setTitle("Accepted", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.3838245273, green: 0.109461613, blue: 0.7299745083, alpha: 1)
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 8
         button.translate()
         button.addTarget(self, action: #selector(hadleAction), for: .touchUpInside)
         return button
@@ -98,29 +98,31 @@ final class TermsViewController: UIViewController {
         NSLayoutConstraint.activate([
             mainVStack.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.topAnchor,
-                constant: 10
+                constant: 12
             ),
             mainVStack.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 10
+                constant: 12
             ),
             mainVStack.trailingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -10
+                constant: -12
             ),
 
             mainHStack.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 10
+                constant: 12
             ),
             mainHStack.trailingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -10
+                constant: -12
             ),
             mainHStack.bottomAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.bottomAnchor,
                 constant: -16
-            )
+            ),
+
+            acceptedButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     private func configureStyle() {
