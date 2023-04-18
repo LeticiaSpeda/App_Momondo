@@ -8,7 +8,7 @@
 import UIKit
 
 final class TermsViewController: UIViewController {
-    
+
     private lazy var mainVStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -16,7 +16,7 @@ final class TermsViewController: UIViewController {
         stack.translate()
         return stack
     }()
-    
+
     private lazy var mainHStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -24,7 +24,7 @@ final class TermsViewController: UIViewController {
         stack.translate()
         return stack
     }()
-    
+
     private lazy var logoImage: UIImageView = {
         let image = UIImage(named: "logoMomondo")
         let imageView = UIImageView(image: image)
@@ -32,7 +32,7 @@ final class TermsViewController: UIViewController {
         imageView.translate()
         return imageView
     }()
-    
+
     private lazy var termsText: UILabel = {
         let attributedText = createTermsAttributedText()
         let label = UILabel()
@@ -42,24 +42,22 @@ final class TermsViewController: UIViewController {
         label.translate()
         return label
     }()
-    
+
     private func createTermsAttributedText() -> NSAttributedString {
         let normalText = "Ao usar nosso aplicativo, você concorda com nossos Termos e Condições e nossa "
         let highlightedText = "Politica de Privacidade e Cookies."
-        
         let attributedText = NSMutableAttributedString()
         let normalTextAttribute = NSAttributedString(string: normalText, attributes: [
-            .foregroundColor: UIColor.white,
+            .foregroundColor: UIColor.white
         ])
         attributedText.append(normalTextAttribute)
-        
         let highlightedTextAttribute = NSAttributedString(string: highlightedText, attributes: [
             .foregroundColor: UIColor.systemBlue
         ])
         attributedText.append(highlightedTextAttribute)
         return attributedText
     }
-    
+
     private lazy var acceptedButton: UIButton = {
         let button = UIButton()
         button.setTitle("Accepted", for: .normal)
@@ -70,34 +68,32 @@ final class TermsViewController: UIViewController {
         button.addTarget(self, action: #selector(hadleAction), for: .touchUpInside)
         return button
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
     }
-    
+
     @objc func hadleAction() {
         let controller = LoginViewController()
         controller.modalPresentationStyle = .overFullScreen
         present(controller, animated: true)
     }
-    
+
     private func commonInit() {
         configureHierarchy()
         configureConstraints()
         configureStyle()
     }
-    
+
     private func configureHierarchy() {
         view.addSubview(mainVStack)
         view.addSubview(mainHStack)
-        
         mainVStack.addArrangedSubview(logoImage)
         mainVStack.addArrangedSubview(termsText)
-        
         mainHStack.addArrangedSubview(acceptedButton)
     }
-    
+
     private func configureConstraints() {
         NSLayoutConstraint.activate([
             mainVStack.topAnchor.constraint(
@@ -112,8 +108,7 @@ final class TermsViewController: UIViewController {
                 equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                 constant: -10
             ),
-            
-            
+
             mainHStack.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                 constant: 10
@@ -128,10 +123,7 @@ final class TermsViewController: UIViewController {
             )
         ])
     }
-    
     private func configureStyle() {
         view.backgroundColor = #colorLiteral(red: 0.1051880196, green: 0.01547455508, blue: 0.209243536, alpha: 1)
     }
-    
 }
-
