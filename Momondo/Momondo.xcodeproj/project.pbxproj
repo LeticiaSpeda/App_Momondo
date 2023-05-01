@@ -12,7 +12,7 @@
 		E012D1DF29E39F3100B38544 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1DE29E39F3100B38544 /* TermsViewController.swift */; };
 		E012D1E429E39F3300B38544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E329E39F3300B38544 /* Assets.xcassets */; };
 		E012D1E729E39F3300B38544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E012D1E529E39F3300B38544 /* LaunchScreen.storyboard */; };
-		E012D1F229E39F3300B38544 /* MomondoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1F129E39F3300B38544 /* MomondoTests.swift */; };
+		E012D1F229E39F3300B38544 /* TermsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1F129E39F3300B38544 /* TermsViewControllerTests.swift */; };
 		E012D20F29EE063000B38544 /* Extension+UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D20E29EE063000B38544 /* Extension+UiView.swift */; };
 		E012D21129EE20A100B38544 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D21029EE20A100B38544 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 		E012D1E629E39F3300B38544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E012D1E829E39F3300B38544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E012D1ED29E39F3300B38544 /* MomondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E012D1F129E39F3300B38544 /* MomondoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomondoTests.swift; sourceTree = "<group>"; };
+		E012D1F129E39F3300B38544 /* TermsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewControllerTests.swift; sourceTree = "<group>"; };
 		E012D20E29EE063000B38544 /* Extension+UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UiView.swift"; sourceTree = "<group>"; };
 		E012D21029EE20A100B38544 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,7 @@
 		E012D1F029E39F3300B38544 /* MomondoTests */ = {
 			isa = PBXGroup;
 			children = (
-				E012D1F129E39F3300B38544 /* MomondoTests.swift */,
+				E012D1F129E39F3300B38544 /* TermsViewControllerTests.swift */,
 			);
 			path = MomondoTests;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E012D1F229E39F3300B38544 /* MomondoTests.swift in Sources */,
+				E012D1F229E39F3300B38544 /* TermsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

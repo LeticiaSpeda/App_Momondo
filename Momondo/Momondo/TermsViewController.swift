@@ -76,8 +76,10 @@ final class TermsViewController: UIViewController {
 
     @objc func hadleAction() {
         let controller = LoginViewController()
-        controller.modalPresentationStyle = .overFullScreen
-        present(controller, animated: true)
+
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .overFullScreen
+        present(navigation, animated: true)
     }
 
     private func commonInit() {
