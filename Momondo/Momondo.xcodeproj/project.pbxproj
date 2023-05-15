@@ -15,6 +15,7 @@
 		E012D1F229E39F3300B38544 /* TermsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D1F129E39F3300B38544 /* TermsViewControllerTests.swift */; };
 		E012D20F29EE063000B38544 /* Extension+UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D20E29EE063000B38544 /* Extension+UiView.swift */; };
 		E012D21129EE20A100B38544 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012D21029EE20A100B38544 /* LoginViewController.swift */; };
+		E06C6E2D2A12D2AE00F3A9E6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C6E2C2A12D2AE00F3A9E6 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		E012D1F129E39F3300B38544 /* TermsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewControllerTests.swift; sourceTree = "<group>"; };
 		E012D20E29EE063000B38544 /* Extension+UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UiView.swift"; sourceTree = "<group>"; };
 		E012D21029EE20A100B38544 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E06C6E2C2A12D2AE00F3A9E6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				E012D1DE29E39F3100B38544 /* TermsViewController.swift */,
 				E012D21029EE20A100B38544 /* LoginViewController.swift */,
+				E06C6E2C2A12D2AE00F3A9E6 /* RegisterViewController.swift */,
 				E012D1E829E39F3300B38544 /* Info.plist */,
 				E012D20D29EE060800B38544 /* Helpers */,
 				E012D20B29E39FA900B38544 /* Assets */,
@@ -249,6 +252,7 @@
 				E012D1DF29E39F3100B38544 /* TermsViewController.swift in Sources */,
 				E012D1DB29E39F3100B38544 /* AppDelegate.swift in Sources */,
 				E012D20F29EE063000B38544 /* Extension+UiView.swift in Sources */,
+				E06C6E2D2A12D2AE00F3A9E6 /* RegisterViewController.swift in Sources */,
 				E012D21129EE20A100B38544 /* LoginViewController.swift in Sources */,
 				E012D1DD29E39F3100B38544 /* SceneDelegate.swift in Sources */,
 			);
