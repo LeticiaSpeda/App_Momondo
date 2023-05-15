@@ -17,12 +17,20 @@ final class LoginViewController: UIViewController {
         return stack
     }()
 
+    private lazy var mainHStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 5
+        stack.translate()
+        return stack
+    }()
+
     private lazy var optionsLoginText: UILabel = {
         let label = UILabel()
         label.text = "Opções de login"
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .heavy)
-        label.textAlignment = .left
+        label.textAlignment = .center
         label.translate()
         return label
     }()
@@ -80,29 +88,29 @@ final class LoginViewController: UIViewController {
     }()
 
     private lazy var registreText: UILabel = {
-        let attributedText = createTermsAttributedText()
         let label = UILabel()
-        label.attributedText = attributedText
-        label.numberOfLines = 0
-        label.textAlignment = .center
+        label.text = "Não possui uma conta?"
+        label.font = .systemFont(ofSize: 18, weight: .light)
+        label.textColor = .white.withAlphaComponent(0.8)
+        label.numberOfLines = 3
         label.translate()
         return label
     }()
 
-    private func createTermsAttributedText() -> NSAttributedString {
-        let normalText = "Não possui uma conta? "
-        let highlightedText = "Registre-se"
-        let attributedText = NSMutableAttributedString()
-        let normalTextAttribute = NSAttributedString(string: normalText, attributes: [
-            .foregroundColor: UIColor.white
-        ])
-        attributedText.append(normalTextAttribute)
-        let highlightedTextAttribute = NSAttributedString(string: highlightedText, attributes: [
-            .foregroundColor: UIColor.systemBlue
-        ])
-        attributedText.append(highlightedTextAttribute)
-        return attributedText
-    }
+    private lazy var registreButton: UIButton = {
+        let titleString = NSAttributedString(string: "Registre-se")
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+        let underlinedTitleString = NSAttributedString(string: "Registre-se", attributes: underlineAttribute)
+
+        let button = UIButton()
+        button.setAttributedTitle(underlinedTitleString, for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
+        button.titleLabel?.textAlignment = .left
+        button.translate()
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,9 +121,17 @@ final class LoginViewController: UIViewController {
         dismiss(animated: true)
     }
 
+    @objc func handleRegister() {
+        let controller = RegisterViewController()
+
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .overFullScreen
+        present(navigation, animated: true)
+    }
+
     private func commonInit() {
         configureHierarchy()
-        configureConstrainst()
+        configureConstraints()
         configureStyle()
     }
 
@@ -123,22 +139,25 @@ final class LoginViewController: UIViewController {
         view.addSubview(mainVStack)
 
         mainVStack.addArrangedSubview(optionsLoginText)
-        mainVStack.addArrangedSubview(UIView())
         mainVStack.addArrangedSubview(googleButton)
         mainVStack.addArrangedSubview(facebookButton)
         mainVStack.addArrangedSubview(emailButton)
         mainVStack.addArrangedSubview(appleButton)
-        mainVStack.addArrangedSubview(registreText)
-        mainVStack.addArrangedSubview(UIView())
+        mainVStack.addArrangedSubview(mainHStack)
+
+        mainHStack.addArrangedSubview(registreText)
+        mainHStack.addArrangedSubview(registreButton)
 
     }
 
-    private func configureConstrainst() {
+    private func configureConstraints() {
         NSLayoutConstraint.activate([
             mainVStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
             mainVStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 12),
             mainVStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -12),
-            mainVStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+
+            mainHStack.leadingAnchor.constraint(equalTo: mainVStack.leadingAnchor),
+            mainHStack.trailingAnchor.constraint(equalTo: mainVStack.trailingAnchor),
 
             googleButton.heightAnchor.constraint(equalToConstant: 35),
 
@@ -147,6 +166,7 @@ final class LoginViewController: UIViewController {
             emailButton.heightAnchor.constraint(equalToConstant: 35),
 
             appleButton.heightAnchor.constraint(equalToConstant: 35)
+
         ])
     }
 
