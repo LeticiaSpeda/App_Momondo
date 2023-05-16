@@ -104,7 +104,7 @@ final class LoginViewController: UIViewController {
 
         let button = UIButton()
         button.setAttributedTitle(underlinedTitleString, for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
         button.titleLabel?.textAlignment = .left
         button.translate()
