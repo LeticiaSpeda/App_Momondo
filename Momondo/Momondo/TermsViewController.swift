@@ -60,7 +60,7 @@ final class TermsViewController: UIViewController {
 
     private lazy var acceptedButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Accepted", for: .normal)
+        button.setTitle("Aceitar", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.3838245273, green: 0.109461613, blue: 0.7299745083, alpha: 1)
         button.layer.cornerRadius = 8
