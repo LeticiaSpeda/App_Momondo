@@ -74,19 +74,6 @@ final class LoginViewController: UIViewController {
         return button
     }()
 
-    private lazy var appleButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Continue com Apple", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-        button.backgroundColor = .white
-        button.layer.cornerRadius = 10
-        button.setImage(UIImage(named: "apple"), for: .normal)
-        button.semanticContentAttribute = .forceLeftToRight
-        button.translate()
-        return button
-    }()
-
     private lazy var registreText: UILabel = {
         let label = UILabel()
         label.text = "Não possui uma conta?"
@@ -142,7 +129,6 @@ final class LoginViewController: UIViewController {
         mainVStack.addArrangedSubview(googleButton)
         mainVStack.addArrangedSubview(facebookButton)
         mainVStack.addArrangedSubview(emailButton)
-        mainVStack.addArrangedSubview(appleButton)
         mainVStack.addArrangedSubview(mainHStack)
 
         mainHStack.addArrangedSubview(registreText)
@@ -163,10 +149,7 @@ final class LoginViewController: UIViewController {
 
             facebookButton.heightAnchor.constraint(equalToConstant: 35),
 
-            emailButton.heightAnchor.constraint(equalToConstant: 35),
-
-            appleButton.heightAnchor.constraint(equalToConstant: 35)
-
+            emailButton.heightAnchor.constraint(equalToConstant: 35)
         ])
     }
 
