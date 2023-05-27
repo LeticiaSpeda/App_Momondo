@@ -9,7 +9,7 @@ import UIKit
 
 final class TermsViewController: UIViewController {
 
-    private lazy var mainVStack: UIStackView = {
+    private(set) lazy var mainVStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
         stack.spacing = 10
@@ -17,7 +17,7 @@ final class TermsViewController: UIViewController {
         return stack
     }()
 
-    private lazy var mainHStack: UIStackView = {
+    private(set) lazy var mainHStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.spacing = 10
@@ -25,7 +25,7 @@ final class TermsViewController: UIViewController {
         return stack
     }()
 
-    private lazy var logoImage: UIImageView = {
+    private(set) lazy var logoImage: UIImageView = {
         let image = UIImage(named: "logoMomondo")
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFill
@@ -58,9 +58,9 @@ final class TermsViewController: UIViewController {
         return attributedText
     }
 
-    private lazy var acceptedButton: UIButton = {
+    private(set) lazy var acceptedButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Accepted", for: .normal)
+        button.setTitle("Aceitar", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.3838245273, green: 0.109461613, blue: 0.7299745083, alpha: 1)
         button.layer.cornerRadius = 8
@@ -76,8 +76,10 @@ final class TermsViewController: UIViewController {
 
     @objc func hadleAction() {
         let controller = LoginViewController()
-        controller.modalPresentationStyle = .overFullScreen
-        present(controller, animated: true)
+
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .overFullScreen
+        present(navigation, animated: true)
     }
 
     private func commonInit() {

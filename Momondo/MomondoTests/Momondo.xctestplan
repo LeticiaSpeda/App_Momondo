@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "419A1342-9117-4ED7-9267-2596A9658C78",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Momondo.xcodeproj",
+          "identifier" : "E012D1D629E39F3100B38544",
+          "name" : "Momondo"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Momondo.xcodeproj",
+        "identifier" : "E0A99DB02A1680D700FC3395",
+        "name" : "MomondoTests"
+      }
+    }
+  ],
+  "version" : 1
+}

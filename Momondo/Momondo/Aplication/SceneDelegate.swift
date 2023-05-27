@@ -6,17 +6,29 @@
 //
 
 import UIKit
+import FirebaseCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [
+            UIApplication.LaunchOptionsKey: Any
+        ]?) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
 
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let safeWindow = UIWindow(windowScene: windowScene)
-        safeWindow.rootViewController = UINavigationController(rootViewController: TermsViewController())
+        let controller = TermsViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        safeWindow.rootViewController = navigation
         safeWindow.makeKeyAndVisible()
 
         window = safeWindow
