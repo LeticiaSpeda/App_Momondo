@@ -6,30 +6,126 @@
 //
 
 import XCTest
+@testable import Momondo
 
 final class LoginViewControllerTests: XCTestCase {
+    let sut = LoginViewController()
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_whenLoadingScreen_displaysTheTitle() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.optionsLoginText.text, "Opções de login")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_whenLoadingScreen_displaysTheTitleColorWhite() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.optionsLoginText.textColor, .white)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_whenLoadingScreen_displaysTheTitleFontHeavyAndSize20() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(
+            sut.optionsLoginText.font,
+            .systemFont(ofSize: 20, weight: .heavy)
+        )
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_whenLoadingScreen_displaysTheTitleIsTheCenter() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.optionsLoginText.textAlignment, .center)
+    }
+
+    func test_whenLoadinScreen_displayTheTitleGoogle() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.googleButton.titleLabel?.text, "Google")
+    }
+
+    func test_whenLoadinScreen_displayTheTitleGoogleColorBlack() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.googleButton.titleLabel?.textColor, .black)
+    }
+
+    func test_whenLoadinScreen_displayTheTitleGoogleFontSemiBoldAndSize18() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(
+            sut.googleButton.titleLabel?.font,
+            .systemFont(ofSize: 18, weight: .semibold)
+        )
+    }
+
+    func test_whenLoadindScreen_googleButton_displayTheCorneRadius10() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.googleButton.layer.cornerRadius, 10)
+    }
+
+    func test_whenLoadindScreen_displayTheImageSideLeftToRight() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.googleButton.semanticContentAttribute, .forceLeftToRight)
+    }
+
+    func test_whenLoadinScreen_displayTheTitleFacebook() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.facebookButton.titleLabel?.text, "Facebook")
+    }
+
+    func test_whenLoadinScreen_displayTheTitleFacebookColorBlack() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.googleButton.titleLabel?.textColor, .black)
+    }
+
+    func test_whenLoadinScreen_displayTheTitleFacebookFontSemiBoldAndSize18() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(
+            sut.facebookButton.titleLabel?.font,
+            .systemFont(ofSize: 18, weight: .semibold)
+        )
+    }
+
+    func test_whenLoadindScreen_facebookButton_displayTheCorneRadius10() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.facebookButton.layer.cornerRadius, 10)
+    }
+
+    func test_whenLoadindScreen_facebookBotao_displayTheImageSideLeftToRight() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.facebookButton.semanticContentAttribute, .forceLeftToRight)
+    }
+
+    func test_whenLoadingScreen_displayTheTitleEmail() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.emailButton.titleLabel?.text, "Continue com Email")
+    }
+
+    func test_whenLoadinScreen_displayTheTitleEmailColorBlack() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.emailButton.titleLabel?.textColor, .black)
+    }
+
+    func test_whenLoadinScreen_displayTheTitleEmailFontSemiBoldAndSize18() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(
+            sut.emailButton.titleLabel?.font,
+            .systemFont(ofSize: 18, weight: .semibold)
+        )
+    }
+
+    func test_whenLoadindScreen_emailButton_displayTheCorneRadius10() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.emailButton.layer.cornerRadius, 10)
+    }
+
+    func test_whenLoadindScreen_emailBotao_displayTheImageSideLeftToRight() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.emailButton.semanticContentAttribute, .forceLeftToRight)
+    }
+
+    func test_whenLoadingScreen_registerButtonTitleRegistre() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.registreButton.titleLabel?.textColor, .systemBlue)
+    }
+
+    func test_whenLoadingScreen_registerButtonTitleRegister_TextColorBlack() {
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.registreButton.titleLabel?.font, .systemFont(ofSize: 18, weight: .bold))
     }
 
 }
