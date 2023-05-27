@@ -25,7 +25,7 @@ final class LoginViewController: UIViewController {
         return stack
     }()
 
-    private lazy var optionsLoginText: UILabel = {
+    private(set) lazy var optionsLoginText: UILabel = {
         let label = UILabel()
         label.text = "Opções de login"
         label.textColor = .white
@@ -35,7 +35,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
 
-    private lazy var googleButton: UIButton = {
+    private(set) lazy var googleButton: UIButton = {
         let button = UIButton()
         button.setTitle("Google", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -48,7 +48,7 @@ final class LoginViewController: UIViewController {
         return button
     }()
 
-    private lazy var facebookButton: UIButton = {
+    private(set) lazy var facebookButton: UIButton = {
         let button = UIButton()
         button.setTitle("Facebook", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -61,7 +61,7 @@ final class LoginViewController: UIViewController {
         return button
     }()
 
-    private lazy var emailButton: UIButton = {
+    private(set) lazy var emailButton: UIButton = {
         let button = UIButton()
         button.setTitle("Continue com Email", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -84,7 +84,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
 
-    private lazy var registreButton: UIButton = {
+    private(set) lazy var registreButton: UIButton = {
         let titleString = NSAttributedString(string: "Registre-se")
         let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
         let underlinedTitleString = NSAttributedString(string: "Registre-se", attributes: underlineAttribute)

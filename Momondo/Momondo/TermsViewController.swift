@@ -9,7 +9,7 @@ import UIKit
 
 final class TermsViewController: UIViewController {
 
-    private lazy var mainVStack: UIStackView = {
+    private(set) lazy var mainVStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
         stack.spacing = 10
@@ -17,7 +17,7 @@ final class TermsViewController: UIViewController {
         return stack
     }()
 
-    private lazy var mainHStack: UIStackView = {
+    private(set) lazy var mainHStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.spacing = 10
@@ -25,7 +25,7 @@ final class TermsViewController: UIViewController {
         return stack
     }()
 
-    private lazy var logoImage: UIImageView = {
+    private(set) lazy var logoImage: UIImageView = {
         let image = UIImage(named: "logoMomondo")
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFill
@@ -58,7 +58,7 @@ final class TermsViewController: UIViewController {
         return attributedText
     }
 
-    private lazy var acceptedButton: UIButton = {
+    private(set) lazy var acceptedButton: UIButton = {
         let button = UIButton()
         button.setTitle("Aceitar", for: .normal)
         button.setTitleColor(.white, for: .normal)
